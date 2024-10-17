@@ -149,7 +149,7 @@ resource "aws_instance" "instance04" {
 }
 
 resource "aws_elb" "elb" {
-    name            = "staticsite-lb-aws-kledson"
+    name            = "staticsite-lb-aws-robelio"
     security_groups = [aws_security_group.sglb.id]
     subnets         = [aws_subnet.subnet1a.id, aws_subnet.subnet1c.id]
     listener {
